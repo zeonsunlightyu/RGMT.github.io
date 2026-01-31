@@ -254,6 +254,41 @@
    
      }
 
+     /* ===== 顶部链接按钮（深色胶囊） ===== */
+    .badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      justify-content:center;
+      margin-top:16px;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 16px;
+      border-radius:999px;
+      background:#2b2b2b;
+      color:#fff;
+      font-weight:700;
+      font-size:16px;
+      border:1px solid rgba(255,255,255,.18);
+      text-decoration:none;
+      line-height:1;
+    }
+
+    .badge:hover{
+      text-decoration:none;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    }
+
+    .badge .icon{
+      width:18px;
+      height:18px;
+      display:inline-block;
+    }
 
   </style>
 </head>
@@ -306,6 +341,29 @@
       <span class="aff-num">2</span>
     </div>
   </div>
+
+    <div class="badges">
+    <!-- Paper：先用网站链接占位，之后改成你的PDF地址，比如 assets/paper.pdf -->
+    <a class="badge" href="assets/paper.pdf" target="_blank" rel="noopener">
+      <span class="icon">📄</span> Paper
+    </a>
+
+    <!-- arXiv：先用网站链接占位，之后改成 arxiv 链接 -->
+    <a class="badge" href="https://zeonsunlightyu.github.io/RGMT.github.io/" target="_blank" rel="noopener">
+      <span class="icon">🧾</span> arXiv
+    </a>
+
+    <!-- 1x Videos：可以直接跳到本页 Overview 视频 -->
+    <a class="badge" href="https://youtu.be/zqAAT0mZEBU>
+      <span class="icon">▶️</span> Videos
+    </a>
+
+    <!-- Bilibili：先用网站链接占位，之后换成 bilibili 链接 -->
+    <a class="badge" href="https://zeonsunlightyu.github.io/RGMT.github.io/" target="_blank" rel="noopener">
+      <span class="icon">📺</span> Bilibili
+    </a>
+  </div>
+
   </header>
 
     <section class="section" id="overview">
@@ -631,6 +689,17 @@
  
 
     </section>
+
+    <section class="section" id="bibtex">
+    <h2>BibTeX</h2>
+    <pre class="paper"><code>@article{rgmt2026,
+    title   = {Robust and Generalized Humanoid Motion Tracking},
+    author  = {Ma, Yubiao and Yu, Han and Xie, Jiayin and Lv, Changtai and Luo, Qiang and Zhang, Chi and Yin, Yunpeng and Xing, Boyang and Ren, Xuemei and Zheng, Dongdong},
+    journal = {arXiv preprint},
+    year    = {2026}
+  }</code></pre>
+  </section>
+
 
     <footer>
       © 2026 Your Lab / Group. Single-file, mobile-friendly. Replace assets in <code>assets/</code> and publish via GitHub Pages.
