@@ -241,31 +241,18 @@
       text-align:center;
     }
     .sep{ margin:0 8px; opacity:.6; }
+    .overview-video.teaser{
+      aspect-ratio: 16 / 9 !important;   /* 关键：别用 16/8 之类 */
+    }
 
-    /* overview 顶部大视频：去掉卡片内边距，让视频贴边 */
-      .overview-video{
-        padding: 0 !important;      /* 去掉 .card 的 padding */
-      }
-
-      /* 让视频填满容器（避免出现窄条/留白） */
-      .overview-video video{
-        width: 100%;
-        height: 100%;
-        display: block;
-        object-fit: cover;          /* 想不裁剪就改成 contain */
-      }
-
-      /* 可选：把 overview 这一段上下间距缩小 */
-      #overview.section{
-        margin: 16px 0;             /* 原来全局是 32px 0 */
-      }
-
-      /* 可选：如果你觉得框太厚/太空，再减小圆角或边框 */
-      .overview-video{
-        border-radius: 16px;        /* 你可改 12px */
-      }
-
-
+    /* video 继续用 100% 保证控件不被裁 */
+    .overview-video video{
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;                /* 不裁剪 */
+   
+    }
 
   </style>
 </head>
